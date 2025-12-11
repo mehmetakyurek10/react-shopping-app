@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import "./CSS Dosyaları/ProductDetail.css";
 import { useParams, NavLink } from "react-router-dom";
 
 export default function ProductDetail() {
@@ -17,47 +17,23 @@ export default function ProductDetail() {
   }, [id]);
 
   if (!urun) {
-    return (
-      <h2 style={{ textAlign: "center", marginTop: "50px" }}>
-        Detaylar Yükleniyor...
-      </h2>
-    );
+    return <h2>Detaylar Yükleniyor...</h2>;
   }
 
   return (
-    <div
-      style={{
-        padding: "20px",
-
-        textAlign: "center",
-
-        maxWidth: "500px",
-
-        margin: "0 auto",
-      }}
-    >
-      <img
-        src={urun.image}
-        alt={urun.title}
-        style={{ width: "200px", height: "200px", objectFit: "contain" }}
-      />
+    <div className="product-detail-main-div">
+      <img src={urun.image} alt={urun.title} className="product-detail-image" />
 
       <h1>{urun.title}</h1>
 
-      <h3 style={{ color: "green", fontSize: "24px" }}>{urun.price} $</h3>
+      <h3>{urun.price} $</h3>
 
-      <p style={{ lineHeight: "1.6", color: "#555" }}>{urun.description}</p>
+      <p className="urun-description">{urun.description}</p>
 
-      <p style={{ fontWeight: "bold", marginTop: "10px" }}>
-        Kategori: {urun.category}
-      </p>
+      <p className="urun-category">Kategori: {urun.category}</p>
 
-      <div style={{ marginTop: "20px" }}>
-        <NavLink
-          to="/products"
-          style={{ textDecoration: "none" }}
-          className="nav-link"
-        >
+      <div className="product-details-button-div">
+        <NavLink to="/products" className="nav-link">
           ⬅ Ürünlere Geri Dön
         </NavLink>
       </div>

@@ -1,34 +1,3 @@
-.products-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.product-card {
-  border: 1px solid #ddd;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  text-align: center;
-  background-color: white;
-  transition: transform 0.2s;
-  position: relative;
-  cursor: pointer;
-}
-.detaylarıGör{
-  position: absolute;
-  bottom: 3px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-
-.product-card:hover {
-  transform: translateY(-5px);
-  border-color: #007bff;
-}
-
 .nav-link{
   text-decoration: none;
   margin-left:6px;
@@ -42,49 +11,6 @@
   border-bottom: 1px solid #5A9CB5;
   color: #007bff;
 }
-.searching {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  align-items: center;     
-}
-
-.input-arama {
-  max-width: 300px;
-  width: 100%;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  border-radius: 10px;
-}
-.input-arama:hover {
-  transform: translateY(-2px);
-  border-color: #007bff;
-  box-shadow: 
-    0 0 18px rgba(0, 123, 255, 0.6),
-    0 0 6px rgba(0, 123, 255, 0.4),
-    0 0 2px rgba(0, 123, 255, 0.7);
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
-}
-.div-about-logo{
-  display: flex;
-  align-items: center;
-}
-.about-logo{
-  width: 150px;
-  margin-left:16px ;
-}
-
-nav {
-  display: flex;
-  gap: 25px;
-}
-
 .nav-link {
   text-decoration: none;
   color: #444;

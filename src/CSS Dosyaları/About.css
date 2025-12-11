@@ -1,0 +1,13 @@
+.div-about-logo{
+  display: flex;
+  align-items: center;
+}
+.about-logo{
+  width: 150px;
+  margin-left:16px ;
+}
+header{
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}

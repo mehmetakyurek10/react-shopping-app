@@ -1,0 +1,32 @@
+h2{
+    text-align: center;
+}
+.input-arama {
+  max-width: 300px;
+  width: 100%;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.input-arama:hover {
+  transform: translateY(-2px);
+  border-color: #007bff;
+  box-shadow: 
+    0 0 18px rgba(0, 123, 255, 0.6),
+    0 0 6px rgba(0, 123, 255, 0.4),
+    0 0 2px rgba(0, 123, 255, 0.7);
+}
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.searching {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+}

@@ -1,3 +1,4 @@
+import "./CSS Dosyaları/ProductCard.css";
 import { useNavigate, NavLink } from "react-router-dom";
 export default function ProductCard({ urun }) {
   const navigate = useNavigate();
@@ -10,15 +11,13 @@ export default function ProductCard({ urun }) {
       <img
         src={urun.image}
         alt={urun.title}
-        style={{ width: "100px", height: "100px", objectFit: "contain" }}
+        className="productCard-urun-images"
       />
       <h4>{urun.title}</h4>
-      <p style={{ fontWeight: "bold" }}>{urun.price} $</p>
+      <p>{urun.price} $</p>
 
       <NavLink to={`/products/${urun.id}`} className="detaylarıGör">
-        <button style={{ cursor: "pointer", padding: "5px 10px" }}>
-          Detayları Gör
-        </button>
+        <button className="detayları-gör-btn">Detayları Gör</button>
       </NavLink>
     </div>
   );

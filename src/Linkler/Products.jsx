@@ -1,3 +1,4 @@
+import "../CSS Dosyaları/Products.css";
 import { useState, useEffect } from "react";
 import ProductCard from "../ProductCard";
 
@@ -21,19 +22,18 @@ export default function Products() {
   );
 
   if (yukleniyor) {
-    return <h2 style={{ textAlign: "center" }}>Ürünler Yükleniyor...</h2>;
+    return <h2>Ürünler Yükleniyor...</h2>;
   }
 
   return (
     <>
       <div className="searching">
-        <h2 style={{ textAlign: "center" }}>Ürünlerimiz</h2>
+        <h2>Ürünlerimiz</h2>
         <input
           type="text"
           onChange={(e) => setMetin(e.target.value)}
           value={metin}
           placeholder="Ürün ara..."
-          style={{ marginBottom: "20px", padding: "10px" }}
           className="input-arama"
         />
       </div>

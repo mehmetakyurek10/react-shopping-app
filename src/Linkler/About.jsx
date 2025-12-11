@@ -1,7 +1,8 @@
 import logo from "../resimler/logo.jpg";
+import "../CSS Dosyaları/About.css";
 export default function About() {
   return (
-    <div style={{ padding: "20px", maxWidth: "600px", margin: "0 auto" }}>
+    <header>
       <div className="div-about-logo">
         <h1>Hakkımızda</h1>
 
@@ -15,6 +16,6 @@ export default function About() {
       <hr />
       <h3>İletişim</h3>
       <p>Email: iletisim@magaza.com</p>
-    </div>
+    </header>
   );
 }

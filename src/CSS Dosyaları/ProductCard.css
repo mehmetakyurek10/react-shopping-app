@@ -1,0 +1,33 @@
+.product-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  background-color: white;
+  transition: transform 0.2s;
+  position: relative;
+  cursor: pointer;
+}
+.detaylarıGör{
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.detayları-gör-btn{
+padding: 5px 10px;
+    cursor: pointer;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  border-color: #007bff;
+}
+.productCard-urun-images{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+p{
+    font-weight: bold;
+}
