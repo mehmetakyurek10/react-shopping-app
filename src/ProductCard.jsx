@@ -13,8 +13,8 @@ export default function ProductCard({ urun }) {
         alt={urun.title}
         className="productCard-urun-images"
       />
-      <h4>{urun.title}</h4>
-      <p>{urun.price} $</p>
+      <h4 className="urun-title">{urun.title}</h4>
+      <p className="urun-price-p">{urun.price} $</p>
 
       <NavLink to={`/products/${urun.id}`} className="detaylarıGör">
         <button className="detayları-gör-btn">Detayları Gör</button>

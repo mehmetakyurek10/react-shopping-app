@@ -1,4 +1,5 @@
 import "./CSS Dosyaları/Layout.css";
+import Footer from "./Footer";
 import logo from "./resimler/logo.jpg";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
 
@@ -11,20 +12,21 @@ export default function Layout() {
 
         <nav className="navbar-links">
           <NavLink to="/" className="nav-link">
-            Home
+            Ana Sayfa
           </NavLink>
           <NavLink to="/about" className="nav-link">
-            About
+            Hakkımızda
           </NavLink>
           <NavLink to="/products" className="nav-link">
-            Products
+            Ürünler
           </NavLink>
         </nav>
       </div>
 
-      <main>
+      <main className="main-content">
         <Outlet />
       </main>
+      <Footer />
     </>
   );
 }

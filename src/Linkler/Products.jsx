@@ -26,7 +26,7 @@ export default function Products() {
   }
 
   return (
-    <>
+    <div className="product-main-div">
       <div className="searching">
         <h2>Ürünlerimiz</h2>
         <input
@@ -47,6 +47,6 @@ export default function Products() {
           ))
         )}
       </div>
-    </>
+    </div>
   );
 }

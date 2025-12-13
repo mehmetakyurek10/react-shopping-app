@@ -2,8 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 16px;
 }
 nav {
   display: flex;
   gap: 25px;
+}
+.layout-header .logo{
+  width: 80px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 100%;
 }

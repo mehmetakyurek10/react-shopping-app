@@ -5,31 +5,26 @@
   color: #5A9CB5;
   transition: transform 0.2s ease;
   display: inline-block;
+  font-size: 18px;
 }
 .nav-link:hover{
   transform: scale(1.1);
   border-bottom: 1px solid #5A9CB5;
   color: #007bff;
 }
-.nav-link {
-  text-decoration: none;
-  color: #444;
-  font-size: 18px;
-  transition: 0.3s ease;
-}
-
-.nav-link:hover {
-  color: #007bff;
-  transform: scale(1.1);
-}
-
-.logo {
-  width: 80px;
-  height: auto;
-  cursor: pointer;
-}
 body{
-  padding: 5px;
+  overflow-x: hidden;
+  background-color: #f0f9ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.main-content {
+  padding: 8px; 
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 

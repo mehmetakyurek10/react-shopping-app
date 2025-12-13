@@ -28,6 +28,9 @@ padding: 5px 10px;
     height: 100px;
     object-fit: contain;
 }
-p{
-    font-weight: bold;
+.urun-price-p{
+  font-weight: bold;
+}
+.urun-title{
+  font-weight: lighter;
 }
