@@ -30,41 +30,36 @@ Fast, responsive, clean component structure and a smooth shopping UI experience.
 
 ## 📂 Project Structure
 
+```
 react-shopping-app/
-
 ├── src/
-│ ├── components/
-│ │ ├── Footer.jsx
-│ │ └── Layout.jsx
-│ │
-│ ├── link/
-│ │ ├── Home.jsx
-│ │ ├── Products.jsx
-│ │ └── About.jsx
-│ │
-│ ├── redux/
-│ │ ├── store.js
-│ │ └── currencySlice.js
-│ │
-│ ├── css/
-│ │ ├── ProductCard.css
-│ │ ├── ProductDetail.css
-│ │ ├── Products.css
-│ │ ├── Layout.css
-│ │ ├── Footer.css
-│ │ ├── Home.css
-│ │ └── About.css
-│ │
-│ ├── images/
-│ │ └── logo.jpg
-│ │
-│ ├── App.jsx
-│ ├── main.jsx
-│ ├── ProductCard.jsx
-│ ├── ProductsDetail.jsx
-│ └── style.css
-│
+│   ├── components/
+│   │   ├── Footer.jsx
+│   │   └── Layout.jsx
+│   ├── link/
+│   │   ├── Home.jsx
+│   │   ├── Products.jsx
+│   │   └── About.jsx
+│   ├── redux/
+│   │   ├── store.js
+│   │   └── currencySlice.js
+│   ├── css/
+│   │   ├── ProductCard.css
+│   │   ├── ProductDetail.css
+│   │   ├── Products.css
+│   │   ├── Layout.css
+│   │   ├── Footer.css
+│   │   ├── Home.css
+│   │   └── About.css
+│   ├── images/
+│   │   └── logo.jpg
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── ProductCard.jsx
+│   ├── ProductsDetail.jsx
+│   └── style.css
 └── package.json
+```
 
 ---
 
