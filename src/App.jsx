@@ -1,8 +1,8 @@
-import Products from "./Linkler/Products";
+import Products from "./link/Products";
 import { Route, Routes } from "react-router-dom";
-import Home from "./Linkler/Home";
-import About from "./Linkler/About";
-import Layout from "./Layout";
+import Home from "./link/Home";
+import About from "./link/About";
+import Layout from "./components/Layout";
 import ProductDetail from "./ProductsDetail";
 
 export default function App() {
@@ -13,7 +13,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="products" element={<Products />} />
-          <Route path="/products/:id" element={<ProductDetail />} />
+          <Route path="products/:id" element={<ProductDetail />} />
         </Route>
       </Routes>
     </>

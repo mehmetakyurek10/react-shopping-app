@@ -1,6 +1,6 @@
-import "./CSS Dosyaları/Layout.css";
+import "../css/Layout.css";
 import Footer from "./Footer";
-import logo from "./resimler/logo.jpg";
+import logo from "../images/logo.jpg";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
 
 export default function Layout() {

@@ -10,6 +10,7 @@ Fast, responsive, clean component structure and a smooth shopping UI experience.
 - **React**
 - **Vite**
 - **React Router DOM**
+- **Redux Toolkit**
 - **CSS**
 - **FakeStore API**
 
@@ -22,6 +23,7 @@ Fast, responsive, clean component structure and a smooth shopping UI experience.
 - 📱 Fully responsive design
 - 🧭 Routing structure (Home, Products, Product Detail)
 - ♻️ Reusable components (Navbar, Footer, ProductCard)
+- 💱 Multi-currency support (TRY, USD, EUR, GBP) with real-time price conversion
 - 🎨 Clean CSS and UI improvements
 
 ---
@@ -30,21 +32,36 @@ Fast, responsive, clean component structure and a smooth shopping UI experience.
 
 react-shopping-app/
 
-├── public/
-
 ├── src/
 │ ├── components/
-│ │ ├── Navbar.jsx
 │ │ ├── Footer.jsx
-│ │ └── ProductCard.jsx
+│ │ └── Layout.jsx
 │ │
-│ ├── pages/
+│ ├── link/
 │ │ ├── Home.jsx
 │ │ ├── Products.jsx
-│ │ └── ProductDetail.jsx
+│ │ └── About.jsx
+│ │
+│ ├── redux/
+│ │ ├── store.js
+│ │ └── currencySlice.js
+│ │
+│ ├── css/
+│ │ ├── ProductCard.css
+│ │ ├── ProductDetail.css
+│ │ ├── Products.css
+│ │ ├── Layout.css
+│ │ ├── Footer.css
+│ │ ├── Home.css
+│ │ └── About.css
+│ │
+│ ├── images/
+│ │ └── logo.jpg
 │ │
 │ ├── App.jsx
 │ ├── main.jsx
+│ ├── ProductCard.jsx
+│ ├── ProductsDetail.jsx
 │ └── style.css
 │
 └── package.json

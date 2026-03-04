@@ -1,0 +1,69 @@
+.product-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  background-color: white;
+  transition: transform 0.2s, border-color 0.2s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  border-color: #007bff;
+}
+
+.productCard-urun-images {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.urun-title {
+  font-weight: lighter;
+  font-size: 15px;
+  margin: 5px 0 10px 0;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 40px;
+}
+
+.urun-price-p {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+  margin-top: auto;
+  margin-bottom: 15px;
+}
+
+.detaylarıGör {
+  text-decoration: none;
+  width: 100%;
+}
+
+.detayları-gör-btn {
+  padding: 8px 15px;
+  cursor: pointer;
+  width: 90%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.detayları-gör-btn:hover {
+  background-color: #0056b3;
+}

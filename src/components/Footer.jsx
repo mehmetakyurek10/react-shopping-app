@@ -1,8 +1,10 @@
 import { NavLink } from "react-router-dom";
-import logo from "./resimler/logo.jpg";
-import "./CSS Dosyaları/Footer.css";
+import logo from "../images/logo.jpg";
+import "../css/Footer.css";
 
 export default function Footer() {
+  const date = new Date().getFullYear();
+
   return (
     <footer className="footer-main-div">
       <h3>Magaza.com</h3>
@@ -54,7 +56,7 @@ export default function Footer() {
 
       <div className="logo-telif">
         <img src={logo} alt="Magaza Logo" className="footer-logo" />
-        <span>© 2025 Magaza. Tüm hakları saklıdır.</span>
+        <span>© {date} Magaza. Tüm hakları saklıdır.</span>
       </div>
     </footer>
   );

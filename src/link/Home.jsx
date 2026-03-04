@@ -1,4 +1,5 @@
-import "../CSS Dosyaları/Home.css";
+import "../css/Home.css";
+
 export default function Home() {
   return (
     <div className="home-main-div">

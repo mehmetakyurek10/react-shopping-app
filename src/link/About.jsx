@@ -1,5 +1,6 @@
-import logo from "../resimler/logo.jpg";
-import "../CSS Dosyaları/About.css";
+import logo from "../images/logo.jpg";
+import "../css/About.css";
+
 export default function About() {
   return (
     <header>
