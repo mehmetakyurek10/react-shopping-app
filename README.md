@@ -1,4 +1,4 @@
-# 🛍️ React Shopping App
+﻿# 🛍️ React Shopping App
 
 A simple and modern shopping application built with **React & Vite**.  
 Fast, responsive, clean component structure and a smooth shopping UI experience.
@@ -23,7 +23,7 @@ Fast, responsive, clean component structure and a smooth shopping UI experience.
 - 📱 Fully responsive design
 - 🧭 Routing structure (Home, Products, Product Detail)
 - ♻️ Reusable components (Navbar, Footer, ProductCard)
-- 💱 Multi-currency support (TRY, USD, EUR, GBP) with real-time price conversion
+- 💱 Multi-currency support (TRY, USD, EUR, GBP)
 - 🎨 Clean CSS and UI improvements
 
 ---
@@ -35,22 +35,25 @@ react-shopping-app/
 ├── src/
 │   ├── components/
 │   │   ├── Footer.jsx
-│   │   └── Layout.jsx
+│   │   ├── Layout.jsx
+│   │   └── ScrollToTop.jsx
 │   ├── link/
 │   │   ├── Home.jsx
 │   │   ├── Products.jsx
 │   │   └── About.jsx
 │   ├── redux/
 │   │   ├── store.js
-│   │   └── currencySlice.js
+│   │   ├── currencySlice.js
+│   │   └── categorySlice.js
 │   ├── css/
+│   │   ├── About.css
+│   │   ├── Footer.css
+│   │   ├── Home.css
+│   │   ├── Layout.css
 │   │   ├── ProductCard.css
 │   │   ├── ProductDetail.css
 │   │   ├── Products.css
-│   │   ├── Layout.css
-│   │   ├── Footer.css
-│   │   ├── Home.css
-│   │   └── About.css
+│   │   └── ScrollToTop.css
 │   ├── images/
 │   │   └── logo.jpg
 │   ├── App.jsx

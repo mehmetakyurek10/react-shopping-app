@@ -4,6 +4,7 @@ import Home from "./link/Home";
 import About from "./link/About";
 import Layout from "./components/Layout";
 import ProductDetail from "./ProductsDetail";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="products/:id" element={<ProductDetail />} />
         </Route>
       </Routes>
+      <ScrollToTop />
     </>
   );
 }

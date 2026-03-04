@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import ProductCard from "../ProductCard";
 import { useSelector, useDispatch } from "react-redux";
 import { handleSetCurrency } from "../redux/currencySlice";
+import { handleSetCategory } from "../redux/categorySlice";
 
 export default function Products() {
   const [metin, setMetin] = useState("");
@@ -11,10 +12,9 @@ export default function Products() {
 
   const dispatch = useDispatch();
 
-  const selectedCurrency = useSelector(
-    (state) => state.currency.selectedCurrency,
+  const selectedCategory = useSelector(
+    (state) => state.category.selectedCategory,
   );
-  console.log(selectedCurrency);
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
@@ -25,10 +25,16 @@ export default function Products() {
       });
   }, []);
 
-  const filtrelenmisUrunler = urunler.filter(
-    (urun) =>
-      urun.title && urun.title.toLowerCase().includes(metin.toLowerCase()),
-  );
+  const filtrelenmisUrunler = urunler.filter((urun) => {
+    const metinEslesiyorMu =
+      urun.title && urun.title.toLowerCase().includes(metin.toLowerCase());
+
+    const kategoriEslesiyorMu =
+      selectedCategory === "all" ||
+      (urun.category &&
+        urun.category.toLowerCase() === selectedCategory.toLowerCase());
+    return metinEslesiyorMu && kategoriEslesiyorMu;
+  });
 
   if (yukleniyor) {
     return <h2>Ürünler Yükleniyor...</h2>;
@@ -46,16 +52,26 @@ export default function Products() {
             placeholder="Ürün ara..."
             className="input-arama"
           />
-          <div className="currency-selector-container">
+          <div className="filters-container">
             <select
               className="currency-select"
               onChange={(e) => dispatch(handleSetCurrency(e.target.value))}
             >
-              <option value="">Para Birimi Seçin</option>
               <option value="USD">Dolar</option>
               <option value="TRY">Türk Lirası</option>
               <option value="EUR">Euro</option>
               <option value="GBP">Sterlin</option>
+            </select>
+
+            <select
+              className="category-select"
+              onChange={(e) => dispatch(handleSetCategory(e.target.value))}
+            >
+              <option value="all">Tüm Kategoriler</option>
+              <option value="Men's Clothing">Erkek Giyim</option>
+              <option value="Jewelery">Takı & Mücevher</option>
+              <option value="Electronics">Elektronik</option>
+              <option value="Women's Clothing">Kadın Giyim</option>
             </select>
           </div>
         </div>

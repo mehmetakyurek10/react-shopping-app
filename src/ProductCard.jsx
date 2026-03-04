@@ -1,6 +1,6 @@
 import "./css/ProductCard.css";
 import { useNavigate, NavLink } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 export default function ProductCard({ urun }) {
   const navigate = useNavigate();
