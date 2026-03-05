@@ -37,7 +37,6 @@ export default function ProductDetail() {
           className="currency-select"
           onChange={(e) => dispatch(handleSetCurrency(e.target.value))}
         >
-          <option value="">Para Birimi Seçin</option>
           <option value="USD">Dolar</option>
           <option value="TRY">Türk Lirası</option>
           <option value="EUR">Euro</option>

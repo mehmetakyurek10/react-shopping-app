@@ -1,6 +1,9 @@
-h1{
-    text-align: center;
+.home-navlinks{
+    display: flex;
+    justify-content: center;
+
 }
+
 .home-main-div{
     height: 100vh;
 }
