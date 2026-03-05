@@ -40,13 +40,18 @@ react-shopping-app/
 │   ├── link/
 │   │   ├── Home.jsx
 │   │   ├── Products.jsx
-│   │   └── About.jsx
+│   │   ├── About.jsx
+│   │   └── productLink/
+│   │       ├── Clothing.jsx
+│   │       ├── Electronics.jsx
+│   │       └── Jewelery.jsx
 │   ├── redux/
 │   │   ├── store.js
 │   │   ├── currencySlice.js
 │   │   └── categorySlice.js
 │   ├── css/
 │   │   ├── About.css
+│   │   ├── Clothing.css
 │   │   ├── Footer.css
 │   │   ├── Home.css
 │   │   ├── Layout.css
@@ -55,7 +60,12 @@ react-shopping-app/
 │   │   ├── Products.css
 │   │   └── ScrollToTop.css
 │   ├── images/
-│   │   └── logo.jpg
+│   │   ├── logo.jpg
+│   │   ├── dress.jpg
+│   │   ├── e_sweat.jpg
+│   │   ├── headphones.jpg
+│   │   ├── jewelery.jpg
+│   │   └── phone.png
 │   ├── App.jsx
 │   ├── main.jsx
 │   ├── ProductCard.jsx
