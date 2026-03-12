@@ -1,7 +1,5 @@
+import "../../css/Jewelery.css";
+
 export default function Jewelery() {
-  return (
-    <>
-      <div>pp</div>
-    </>
-  );
+  return <></>;
 }

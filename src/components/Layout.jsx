@@ -8,19 +8,26 @@ export default function Layout() {
   return (
     <>
       <div className="layout-header">
-        <img src={logo} alt="" className="logo" onClick={() => navigate(`/`)} />
+        <div className="header-content">
+          <img
+            src={logo}
+            alt="Site Logosu"
+            className="logo"
+            onClick={() => navigate(`/`)}
+          />
 
-        <nav className="navbar-links">
-          <NavLink to="/" className="nav-link">
-            Ana Sayfa
-          </NavLink>
-          <NavLink to="/about" className="nav-link">
-            Hakkımızda
-          </NavLink>
-          <NavLink to="/products" className="nav-link">
-            Ürünler
-          </NavLink>
-        </nav>
+          <nav className="navbar-links">
+            <NavLink to="/" className="nav-link">
+              Ana Sayfa
+            </NavLink>
+            <NavLink to="/about" className="nav-link">
+              Hakkımızda
+            </NavLink>
+            <NavLink to="/products" className="nav-link">
+              Ürünler
+            </NavLink>
+          </nav>
+        </div>
       </div>
 
       <main className="main-content">

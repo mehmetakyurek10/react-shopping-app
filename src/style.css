@@ -2,7 +2,6 @@
   text-decoration: none;
   margin-left:6px;
   border-bottom: 1px solid #007bff;
-  color: #5A9CB5;
   transition: transform 0.2s ease;
   display: inline-block;
   font-size: 18px;
@@ -16,6 +15,7 @@ body{
   overflow-x: hidden;
   background-color: #f0f9ff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px;
 }
 .main-content {
   padding: 8px; 
