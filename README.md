@@ -48,30 +48,37 @@ react-shopping-app/
 │   ├── redux/
 │   │   ├── store.js
 │   │   ├── currencySlice.js
-│   │   └── categorySlice.js
+│   │   ├── categorySlice.js
+│   │   └── productsSlice.js
 │   ├── css/
 │   │   ├── About.css
 │   │   ├── Clothing.css
+│   │   ├── Electronics.css
 │   │   ├── Footer.css
 │   │   ├── Home.css
+│   │   ├── Jewelery.css
 │   │   ├── Layout.css
 │   │   ├── ProductCard.css
 │   │   ├── ProductDetail.css
 │   │   ├── Products.css
 │   │   └── ScrollToTop.css
 │   ├── images/
-│   │   ├── logo.jpg
 │   │   ├── dress.jpg
 │   │   ├── e_sweat.jpg
 │   │   ├── headphones.jpg
 │   │   ├── jewelery.jpg
+│   │   ├── logo.jpg
 │   │   └── phone.png
 │   ├── App.jsx
 │   ├── main.jsx
 │   ├── ProductCard.jsx
 │   ├── ProductsDetail.jsx
 │   └── style.css
-└── package.json
+├── eslint.config.js
+├── index.html
+├── vite.config.js
+├── package.json
+└── package-lock.json
 ```
 
 ---
